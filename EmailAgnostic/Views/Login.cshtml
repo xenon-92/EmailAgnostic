@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        h2 {
+            text-align: center;
+        }
+
+        .outerBox {
+            border: 3px solid #797474;
+            margin-left: 448px;
+            margin-right: 341px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bravo {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .aldo {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+        }
+
+            .aldo:hover {
+                opacity: 0.8;
+            }
+
+        .cancelbtnx {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container-x {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+
+    </style>
+</head>
+<body>
+
+    <div class="outerBox">
+        <h2>Login Form</h2>
+        <div class="imgcontainer">
+            <img src="~Avatar.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container-x">
+            <label for="uname"><b>Username</b></label>
+            <input class="bravo" type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input class="bravo" type="password" placeholder="Enter Password" name="psw" required>
+            <br />
+            <button type="submit" class="aldo">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container-x" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtnX aldo">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

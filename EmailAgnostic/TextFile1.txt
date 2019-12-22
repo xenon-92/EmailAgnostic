@@ -1,0 +1,7 @@
+﻿Dear &Customer,
+
+This is in regards with the verification of the email id(&sample@email.com) that you have provided.
+Please enter this code(&samplecode) on the next screen to complete your verification.
+
+Adios!
+Team XYZ

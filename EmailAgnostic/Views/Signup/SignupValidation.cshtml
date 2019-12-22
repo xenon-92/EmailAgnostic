@@ -1,0 +1,62 @@
+﻿@model EmailAgnostic.Models.CodeValidations
+@{
+    ViewBag.Title = "SignupValidation";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enter Code</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <style>
+        .container {
+            margin-top: 150px;
+            background-color: lightgoldenrodyellow;
+            max-width: 850px;
+        }
+        .form-control {
+            max-width: 343px;
+            color: #15c;
+            text-align:center;
+            margin-left:184px;
+        }
+        h2{
+            text-align:center;
+        }
+        .align{
+            text-align: center;
+        }
+        .btn {
+            width: 30%;
+            margin-left: 225px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Enter the code send to your Email</h2>
+        @{
+            Html.BeginForm("CheckCode", "Signup", FormMethod.Post);
+        <div class="form-group">        
+        @Html.TextBoxFor(m => m.Code, new { @class = "form-control", placeholder = "Enter your code here" })
+        </div>
+        <div class="align">
+            <button type="submit" class="btn btn-primary btn-block">Validate</button>
+        </div>
+        }
+
+
+
+    </div>
+
+</body>
+</html>
+
+
